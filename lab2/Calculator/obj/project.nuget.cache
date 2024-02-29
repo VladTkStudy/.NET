@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HWK7GEgUBQS2YQvzRzZv7sNghGJ5EvsHuyckFjWzkPi02Ko47cP24MoAfLBEi+kaBbggRwy9x3zWVM2tQYlovQ==",
+  "dgSpecHash": "8qGj3dxsdPO5b4Xm8OdgA1mUgInnT8rbLro/ZUMX+Du2Lj+xW+zK0B2U/dod0SZ5c7edG7mWnu3dcWKokfCuQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nagib\\source\\repos\\Calculator\\Calculator.csproj",
+  "projectFilePath": "C:\\Users\\nagib\\Documents\\VSCode\\C#\\.NET\\lab2\\Calculator\\Calculator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

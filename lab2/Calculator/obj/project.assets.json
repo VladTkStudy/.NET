@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nagib\\source\\repos\\Calculator\\Calculator.csproj",
+      "projectUniqueName": "C:\\Users\\nagib\\Documents\\VSCode\\C#\\.NET\\lab2\\Calculator\\Calculator.csproj",
       "projectName": "Calculator",
-      "projectPath": "C:\\Users\\nagib\\source\\repos\\Calculator\\Calculator.csproj",
+      "projectPath": "C:\\Users\\nagib\\Documents\\VSCode\\C#\\.NET\\lab2\\Calculator\\Calculator.csproj",
       "packagesPath": "C:\\Users\\nagib\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nagib\\source\\repos\\Calculator\\obj\\",
+      "outputPath": "C:\\Users\\nagib\\Documents\\VSCode\\C#\\.NET\\lab2\\Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nagib\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -28,6 +28,9 @@
             actionsDictionary.Add('-', () => { result = firstNumber - secondNumber; });
             actionsDictionary.Add('x', () => { result = firstNumber * secondNumber; });
             actionsDictionary.Add(':', () => { result = firstNumber / secondNumber; });
+            actionsDictionary.Add('%', () => { result = firstNumber / 100 * secondNumber; });
+            actionsDictionary.Add('^', () => { result = MathF.Pow(firstNumber, secondNumber); });
+            actionsDictionary.Add('√', () => { result = MathF.Pow(secondNumber, 1/firstNumber); });
         }
 
         #region OnClickEvents
@@ -127,10 +130,15 @@
             if (char.IsNumber(number) == false)
                 throw new Exception("Invalid number input");
 
-            if (currentNumberString.StartsWith('0') && number != '0')
+            if (currentNumberString.StartsWith('0'))
             {
-                currentNumberString = string.Empty;
-                output.Text = output.Text.Remove(output.Text.Length - 1);
+                if (number != '0')
+                {
+                    currentNumberString = string.Empty;
+                    output.Text = output.Text.Remove(output.Text.Length - 1);
+                }
+                else
+                    return;
             }
 
             currentNumberString += number;
