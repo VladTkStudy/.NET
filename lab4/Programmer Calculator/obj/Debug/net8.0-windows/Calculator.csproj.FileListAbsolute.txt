@@ -1,0 +1,53 @@
+C:\Users\nagib\source\repos\Calculator\obj\Debug\net8.0-windows\Calculator.Calculator.resources
+C:\Users\nagib\source\repos\Calculator\obj\Debug\net8.0-windows\Calculator.csproj.GenerateResource.cache
+C:\Users\nagib\source\repos\Calculator\obj\Debug\net8.0-windows\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nagib\source\repos\Calculator\obj\Debug\net8.0-windows\Calculator.AssemblyInfoInputs.cache
+C:\Users\nagib\source\repos\Calculator\obj\Debug\net8.0-windows\Calculator.AssemblyInfo.cs
+C:\Users\nagib\source\repos\Calculator\obj\Debug\net8.0-windows\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\nagib\source\repos\Calculator\bin\Debug\net8.0-windows\Calculator.exe
+C:\Users\nagib\source\repos\Calculator\bin\Debug\net8.0-windows\Calculator.deps.json
+C:\Users\nagib\source\repos\Calculator\bin\Debug\net8.0-windows\Calculator.runtimeconfig.json
+C:\Users\nagib\source\repos\Calculator\bin\Debug\net8.0-windows\Calculator.dll
+C:\Users\nagib\source\repos\Calculator\bin\Debug\net8.0-windows\Calculator.pdb
+C:\Users\nagib\source\repos\Calculator\obj\Debug\net8.0-windows\Calculator.dll
+C:\Users\nagib\source\repos\Calculator\obj\Debug\net8.0-windows\refint\Calculator.dll
+C:\Users\nagib\source\repos\Calculator\obj\Debug\net8.0-windows\Calculator.pdb
+C:\Users\nagib\source\repos\Calculator\obj\Debug\net8.0-windows\Calculator.genruntimeconfig.cache
+C:\Users\nagib\source\repos\Calculator\obj\Debug\net8.0-windows\ref\Calculator.dll
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\bin\Debug\net8.0-windows\Calculator.exe
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\bin\Debug\net8.0-windows\Calculator.deps.json
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\bin\Debug\net8.0-windows\Calculator.runtimeconfig.json
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\bin\Debug\net8.0-windows\Calculator.dll
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\bin\Debug\net8.0-windows\Calculator.pdb
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\obj\Debug\net8.0-windows\Calculator.Calculator.resources
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\obj\Debug\net8.0-windows\Calculator.csproj.GenerateResource.cache
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\obj\Debug\net8.0-windows\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\obj\Debug\net8.0-windows\Calculator.AssemblyInfoInputs.cache
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\obj\Debug\net8.0-windows\Calculator.AssemblyInfo.cs
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\obj\Debug\net8.0-windows\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\obj\Debug\net8.0-windows\Calculator.sourcelink.json
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\obj\Debug\net8.0-windows\Calculator.dll
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\obj\Debug\net8.0-windows\refint\Calculator.dll
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\obj\Debug\net8.0-windows\Calculator.pdb
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\obj\Debug\net8.0-windows\Calculator.genruntimeconfig.cache
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab2\Calculator\obj\Debug\net8.0-windows\ref\Calculator.dll
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\bin\Debug\net8.0-windows\Calculator.exe
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\bin\Debug\net8.0-windows\Calculator.deps.json
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\bin\Debug\net8.0-windows\Calculator.runtimeconfig.json
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\bin\Debug\net8.0-windows\Calculator.dll
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\bin\Debug\net8.0-windows\Calculator.pdb
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\bin\Debug\net8.0-windows\aa\Calculator.resources.dll
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\Calculator.Calculator.resources
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\Calculator.Calculator.aa.resources
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\Calculator.csproj.GenerateResource.cache
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\Calculator.AssemblyInfoInputs.cache
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\Calculator.AssemblyInfo.cs
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\Calculator.sourcelink.json
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\aa\Calculator.resources.dll
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\Calculator.dll
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\refint\Calculator.dll
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\Calculator.pdb
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\Calculator.genruntimeconfig.cache
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\ref\Calculator.dll
