@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EngineerCalculator/1.0.0": {
+        "runtime": {
+          "EngineerCalculator.dll": {}
+        },
+        "resources": {
+          "aa/EngineerCalculator.resources.dll": {
+            "locale": "aa"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EngineerCalculator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

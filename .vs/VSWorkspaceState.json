@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\lab2",
-    "\\lab2\\Calculator"
+    "\\lab3",
+    "\\lab3\\Engineer Calculator"
   ],
-  "SelectedNode": "\\lab2\\Calculator\\Calculator.cs",
+  "SelectedNode": "\\lab3\\Engineer Calculator\\Calculator.sln",
   "PreviewInSolutionExplorer": false
 }
