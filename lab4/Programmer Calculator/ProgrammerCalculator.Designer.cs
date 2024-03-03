@@ -3,7 +3,7 @@
     partial class ProgrammerCalculator
     {
         //Виконав: Ткаченко Владислав, група ПЗ-2204
-        //Дата 01.03.2024, email:vladtk.fm@gmail.com
+        //Дата 03.03.2024, email:vladtk.fm@gmail.com
 
         /// <summary>
         ///  Required designer variable.

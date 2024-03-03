@@ -71,7 +71,7 @@
             // 
             seven.BackColor = Color.Gray;
             resources.ApplyResources(seven, "seven");
-            seven.ForeColor = SystemColors.ActiveCaptionText;
+            seven.ForeColor = SystemColors.ButtonHighlight;
             seven.Name = "seven";
             seven.UseVisualStyleBackColor = false;
             seven.Click += OnNumberClick;
@@ -80,7 +80,7 @@
             // 
             eight.BackColor = Color.Gray;
             resources.ApplyResources(eight, "eight");
-            eight.ForeColor = SystemColors.ActiveCaptionText;
+            eight.ForeColor = SystemColors.ButtonHighlight;
             eight.Name = "eight";
             eight.UseVisualStyleBackColor = false;
             eight.Click += OnNumberClick;
@@ -89,7 +89,7 @@
             // 
             nine.BackColor = Color.Gray;
             resources.ApplyResources(nine, "nine");
-            nine.ForeColor = SystemColors.ActiveCaptionText;
+            nine.ForeColor = SystemColors.ButtonHighlight;
             nine.Name = "nine";
             nine.UseVisualStyleBackColor = false;
             nine.Click += OnNumberClick;
@@ -98,7 +98,7 @@
             // 
             four.BackColor = Color.Gray;
             resources.ApplyResources(four, "four");
-            four.ForeColor = SystemColors.ActiveCaptionText;
+            four.ForeColor = SystemColors.ButtonHighlight;
             four.Name = "four";
             four.UseVisualStyleBackColor = false;
             four.Click += OnNumberClick;
@@ -107,7 +107,7 @@
             // 
             five.BackColor = Color.Gray;
             resources.ApplyResources(five, "five");
-            five.ForeColor = SystemColors.ActiveCaptionText;
+            five.ForeColor = SystemColors.ButtonHighlight;
             five.Name = "five";
             five.UseVisualStyleBackColor = false;
             five.Click += OnNumberClick;
@@ -116,7 +116,7 @@
             // 
             six.BackColor = Color.Gray;
             resources.ApplyResources(six, "six");
-            six.ForeColor = SystemColors.ActiveCaptionText;
+            six.ForeColor = SystemColors.ButtonHighlight;
             six.Name = "six";
             six.UseVisualStyleBackColor = false;
             six.Click += OnNumberClick;
@@ -125,7 +125,7 @@
             // 
             one.BackColor = Color.Gray;
             resources.ApplyResources(one, "one");
-            one.ForeColor = SystemColors.ActiveCaptionText;
+            one.ForeColor = SystemColors.ButtonHighlight;
             one.Name = "one";
             one.UseVisualStyleBackColor = false;
             one.Click += OnNumberClick;
@@ -134,7 +134,7 @@
             // 
             two.BackColor = Color.Gray;
             resources.ApplyResources(two, "two");
-            two.ForeColor = SystemColors.ActiveCaptionText;
+            two.ForeColor = SystemColors.ButtonHighlight;
             two.Name = "two";
             two.UseVisualStyleBackColor = false;
             two.Click += OnNumberClick;
@@ -143,7 +143,7 @@
             // 
             three.BackColor = Color.Gray;
             resources.ApplyResources(three, "three");
-            three.ForeColor = SystemColors.ActiveCaptionText;
+            three.ForeColor = SystemColors.ButtonHighlight;
             three.Name = "three";
             three.UseVisualStyleBackColor = false;
             three.Click += OnNumberClick;
@@ -152,7 +152,7 @@
             // 
             divide.BackColor = SystemColors.WindowFrame;
             resources.ApplyResources(divide, "divide");
-            divide.ForeColor = SystemColors.ActiveCaptionText;
+            divide.ForeColor = SystemColors.ButtonHighlight;
             divide.Name = "divide";
             divide.UseVisualStyleBackColor = false;
             divide.Click += OnActionClick;
@@ -161,7 +161,7 @@
             // 
             multiply.BackColor = SystemColors.WindowFrame;
             resources.ApplyResources(multiply, "multiply");
-            multiply.ForeColor = SystemColors.ActiveCaptionText;
+            multiply.ForeColor = SystemColors.ButtonHighlight;
             multiply.Name = "multiply";
             multiply.UseVisualStyleBackColor = false;
             multiply.Click += OnActionClick;
@@ -170,7 +170,7 @@
             // 
             minus.BackColor = SystemColors.WindowFrame;
             resources.ApplyResources(minus, "minus");
-            minus.ForeColor = SystemColors.ActiveCaptionText;
+            minus.ForeColor = SystemColors.ButtonHighlight;
             minus.Name = "minus";
             minus.UseVisualStyleBackColor = false;
             minus.Click += OnActionClick;
@@ -179,7 +179,7 @@
             // 
             plus.BackColor = SystemColors.WindowFrame;
             resources.ApplyResources(plus, "plus");
-            plus.ForeColor = SystemColors.ActiveCaptionText;
+            plus.ForeColor = SystemColors.ButtonHighlight;
             plus.Name = "plus";
             plus.UseVisualStyleBackColor = false;
             plus.Click += OnActionClick;
@@ -188,7 +188,7 @@
             // 
             remove.BackColor = Color.RosyBrown;
             resources.ApplyResources(remove, "remove");
-            remove.ForeColor = SystemColors.ActiveCaptionText;
+            remove.ForeColor = SystemColors.ButtonHighlight;
             remove.Name = "remove";
             remove.UseVisualStyleBackColor = false;
             remove.Click += OnRemoveClick;
@@ -197,7 +197,7 @@
             // 
             zero.BackColor = Color.Gray;
             resources.ApplyResources(zero, "zero");
-            zero.ForeColor = SystemColors.ActiveCaptionText;
+            zero.ForeColor = SystemColors.ButtonHighlight;
             zero.Name = "zero";
             zero.UseVisualStyleBackColor = false;
             zero.Click += OnNumberClick;
@@ -206,24 +206,24 @@
             // 
             clear.BackColor = Color.RosyBrown;
             resources.ApplyResources(clear, "clear");
-            clear.ForeColor = SystemColors.ActiveCaptionText;
+            clear.ForeColor = SystemColors.ButtonHighlight;
             clear.Name = "clear";
             clear.UseVisualStyleBackColor = false;
             clear.Click += OnClearClick;
             // 
             // output
             // 
-            output.BackColor = SystemColors.ButtonShadow;
+            output.BackColor = SystemColors.ActiveCaptionText;
             output.BorderStyle = BorderStyle.None;
             resources.ApplyResources(output, "output");
-            output.ForeColor = Color.Black;
+            output.ForeColor = Color.White;
             output.Name = "output";
             // 
             // Equals
             // 
             Equals.BackColor = Color.Tomato;
             resources.ApplyResources(Equals, "Equals");
-            Equals.ForeColor = SystemColors.ActiveCaptionText;
+            Equals.ForeColor = SystemColors.ButtonHighlight;
             Equals.Name = "Equals";
             Equals.UseVisualStyleBackColor = false;
             Equals.Click += OnEqualsClick;
@@ -232,7 +232,7 @@
             // 
             percent.BackColor = SystemColors.WindowFrame;
             resources.ApplyResources(percent, "percent");
-            percent.ForeColor = SystemColors.ActiveCaptionText;
+            percent.ForeColor = SystemColors.ButtonHighlight;
             percent.Name = "percent";
             percent.UseVisualStyleBackColor = false;
             percent.Click += OnActionClick;
@@ -241,7 +241,7 @@
             // 
             power.BackColor = SystemColors.WindowFrame;
             resources.ApplyResources(power, "power");
-            power.ForeColor = SystemColors.ActiveCaptionText;
+            power.ForeColor = SystemColors.ButtonHighlight;
             power.Name = "power";
             power.UseVisualStyleBackColor = false;
             power.Click += OnActionClick;
@@ -250,7 +250,7 @@
             // 
             sqrt.BackColor = SystemColors.WindowFrame;
             resources.ApplyResources(sqrt, "sqrt");
-            sqrt.ForeColor = SystemColors.ActiveCaptionText;
+            sqrt.ForeColor = SystemColors.ButtonHighlight;
             sqrt.Name = "sqrt";
             sqrt.UseVisualStyleBackColor = false;
             sqrt.Click += OnActionClick;
@@ -259,7 +259,7 @@
             // 
             dot.BackColor = Color.Gray;
             resources.ApplyResources(dot, "dot");
-            dot.ForeColor = SystemColors.ActiveCaptionText;
+            dot.ForeColor = SystemColors.ButtonHighlight;
             dot.Name = "dot";
             dot.UseVisualStyleBackColor = false;
             dot.Click += OnNumberClick;
@@ -268,7 +268,7 @@
             // 
             cotan.BackColor = Color.FromArgb(80, 80, 80);
             resources.ApplyResources(cotan, "cotan");
-            cotan.ForeColor = SystemColors.ActiveCaptionText;
+            cotan.ForeColor = SystemColors.ButtonHighlight;
             cotan.Name = "cotan";
             cotan.UseVisualStyleBackColor = false;
             cotan.Click += OnActionClick;
@@ -277,7 +277,7 @@
             // 
             tan.BackColor = Color.FromArgb(80, 80, 80);
             resources.ApplyResources(tan, "tan");
-            tan.ForeColor = SystemColors.ActiveCaptionText;
+            tan.ForeColor = SystemColors.ButtonHighlight;
             tan.Name = "tan";
             tan.UseVisualStyleBackColor = false;
             tan.Click += OnActionClick;
@@ -286,7 +286,7 @@
             // 
             cos.BackColor = Color.FromArgb(80, 80, 80);
             resources.ApplyResources(cos, "cos");
-            cos.ForeColor = SystemColors.ActiveCaptionText;
+            cos.ForeColor = SystemColors.ButtonHighlight;
             cos.Name = "cos";
             cos.UseVisualStyleBackColor = false;
             cos.Click += OnActionClick;
@@ -295,7 +295,7 @@
             // 
             sin.BackColor = Color.FromArgb(80, 80, 80);
             resources.ApplyResources(sin, "sin");
-            sin.ForeColor = SystemColors.ActiveCaptionText;
+            sin.ForeColor = SystemColors.ButtonHighlight;
             sin.Name = "sin";
             sin.UseVisualStyleBackColor = false;
             sin.Click += OnActionClick;
@@ -304,7 +304,7 @@
             // 
             exponent.BackColor = Color.FromArgb(80, 80, 80);
             resources.ApplyResources(exponent, "exponent");
-            exponent.ForeColor = SystemColors.ActiveCaptionText;
+            exponent.ForeColor = SystemColors.ButtonHighlight;
             exponent.Name = "exponent";
             exponent.UseVisualStyleBackColor = false;
             exponent.Click += OnNumberClick;
@@ -313,7 +313,7 @@
             // 
             pi.BackColor = Color.FromArgb(80, 80, 80);
             resources.ApplyResources(pi, "pi");
-            pi.ForeColor = SystemColors.ActiveCaptionText;
+            pi.ForeColor = SystemColors.ButtonHighlight;
             pi.Name = "pi";
             pi.UseVisualStyleBackColor = false;
             pi.Click += OnNumberClick;
@@ -322,7 +322,7 @@
             // 
             logarifm.BackColor = Color.FromArgb(80, 80, 80);
             resources.ApplyResources(logarifm, "logarifm");
-            logarifm.ForeColor = SystemColors.ActiveCaptionText;
+            logarifm.ForeColor = SystemColors.ButtonHighlight;
             logarifm.Name = "logarifm";
             logarifm.UseVisualStyleBackColor = false;
             logarifm.Click += OnActionClick;
@@ -331,7 +331,7 @@
             // 
             radian.BackColor = Color.FromArgb(80, 80, 80);
             resources.ApplyResources(radian, "radian");
-            radian.ForeColor = SystemColors.ActiveCaptionText;
+            radian.ForeColor = SystemColors.ButtonHighlight;
             radian.Name = "radian";
             radian.UseVisualStyleBackColor = false;
             radian.Click += OnActionClick;
@@ -340,7 +340,7 @@
             // 
             factorial.BackColor = Color.FromArgb(80, 80, 80);
             resources.ApplyResources(factorial, "factorial");
-            factorial.ForeColor = SystemColors.ActiveCaptionText;
+            factorial.ForeColor = SystemColors.ButtonHighlight;
             factorial.Name = "factorial";
             factorial.UseVisualStyleBackColor = false;
             factorial.Click += OnActionClick;
@@ -349,7 +349,7 @@
             // 
             nlogarifn.BackColor = Color.FromArgb(80, 80, 80);
             resources.ApplyResources(nlogarifn, "nlogarifn");
-            nlogarifn.ForeColor = SystemColors.ActiveCaptionText;
+            nlogarifn.ForeColor = SystemColors.ButtonHighlight;
             nlogarifn.Name = "nlogarifn";
             nlogarifn.UseVisualStyleBackColor = false;
             nlogarifn.Click += OnActionClick;
@@ -358,7 +358,7 @@
             // 
             mod.BackColor = Color.FromArgb(80, 80, 80);
             resources.ApplyResources(mod, "mod");
-            mod.ForeColor = SystemColors.ActiveCaptionText;
+            mod.ForeColor = SystemColors.ButtonHighlight;
             mod.Name = "mod";
             mod.UseVisualStyleBackColor = false;
             mod.Click += OnActionClick;

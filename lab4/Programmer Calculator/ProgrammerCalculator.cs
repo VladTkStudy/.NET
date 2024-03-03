@@ -1,23 +1,25 @@
 ﻿using ExtendedMath;
+using ProgrammerCalculator;
 
 namespace Calculator
 {
     public partial class ProgrammerCalculator : Form
     {
         //Виконав: Ткаченко Владислав, група ПЗ-2204
-        //Дата 01.03.2024, email:vladtk.fm@gmail.com
+        //Дата 03.03.2024, email:vladtk.fm@gmail.com
 
-        private const float DefaultValue = float.MaxValue;
+        private const string DefaultValue = "#";
         private const bool IsDebugMode = false;
         private readonly Dictionary<char, Action> actionsDictionary = new();
 
         private Action? action;
         private string currentNumberString = string.Empty;
 
-        private float firstNumber = DefaultValue;
-        private float secondNumber = DefaultValue;
-        private float result;
+        private string firstNumber = DefaultValue;
+        private string secondNumber = DefaultValue;
+        private string? result;
         private bool usedDot = false;
+        private ByteRateType currentByteRate;
 
         private Button[]? digitButtons;
 
@@ -30,19 +32,21 @@ namespace Calculator
 
         private void InitializeDictionary()
         {
-            actionsDictionary.Add('+', () => { result = firstNumber + secondNumber; });
-            actionsDictionary.Add('-', () => { result = firstNumber - secondNumber; });
-            actionsDictionary.Add('X', () => { result = firstNumber * secondNumber; });
-            actionsDictionary.Add(':', () => { result = firstNumber / secondNumber; });
-            actionsDictionary.Add('%', () => { result = firstNumber / 100 * secondNumber; });
-            actionsDictionary.Add('^', () => { result = MathF.Pow(firstNumber, secondNumber); });
-            actionsDictionary.Add('√', () => { result = MathF.Pow(secondNumber, 1 / firstNumber); });
-            actionsDictionary.Add('a', () => { result = EMath.And(firstNumber, secondNumber); });
-            actionsDictionary.Add('o', () => { result = EMath.Or(firstNumber, secondNumber); });
-            actionsDictionary.Add('n', () => { result = EMath.Not(firstNumber, secondNumber); });
-            actionsDictionary.Add('x', () => { result = EMath.Xor(firstNumber, secondNumber); });
-            actionsDictionary.Add('p', () => { result = EMath.Nor(firstNumber, secondNumber); });
-            actionsDictionary.Add('l', () => { result = EMath.Nand(firstNumber, secondNumber); });
+            actionsDictionary.Add('+', () => { result = EMath.ByteRateValuesAction(firstNumber, secondNumber, currentByteRate, (a, b) => a + b); });
+            actionsDictionary.Add('-', () => { result = EMath.ByteRateValuesAction(firstNumber, secondNumber, currentByteRate, (a, b) => a - b); });
+            actionsDictionary.Add('X', () => { result = EMath.ByteRateValuesAction(firstNumber, secondNumber, currentByteRate, (a, b) => a * b); });
+            actionsDictionary.Add(':', () => { result = EMath.ByteRateValuesAction(firstNumber, secondNumber, currentByteRate, (a, b) => a / b); });
+            actionsDictionary.Add('%', () => { result = EMath.ByteRateValuesAction(firstNumber, secondNumber, currentByteRate, (a, b) => a / 100 * b); });
+            actionsDictionary.Add('^', () => { result = EMath.ByteRateValuesAction(firstNumber, secondNumber, currentByteRate, (a, b) => (int)Math.Pow(a, b)); });
+            actionsDictionary.Add('√', () => { result = EMath.ByteRateValuesAction(firstNumber, secondNumber, currentByteRate, (a, b) => (int)Math.Pow(b, 1 / a)); });
+            actionsDictionary.Add('a', () => { result = EMath.ByteRateValuesAction(firstNumber, secondNumber, currentByteRate, (a, b) => a & b); });
+            actionsDictionary.Add('o', () => { result = EMath.ByteRateValuesAction(firstNumber, secondNumber, currentByteRate, (a, b) => a | b); });
+            actionsDictionary.Add('x', () => { result = EMath.ByteRateValuesAction(firstNumber, secondNumber, currentByteRate, (a, b) => a ^ b); });
+            actionsDictionary.Add('p', () => { result = EMath.ByteRateValuesAction(firstNumber, secondNumber, currentByteRate, (a, b) => ~a | b); });
+            actionsDictionary.Add('l', () => { result = EMath.ByteRateValuesAction(firstNumber, secondNumber, currentByteRate, (a, b) => ~a & b); });
+            actionsDictionary.Add('n', () => { result = EMath.ByteRateValueAction(firstNumber, currentByteRate, (a) => ~a); });
+            actionsDictionary.Add('«', () => { result = EMath.ByteRateValueAction(firstNumber, currentByteRate, (a) => a << 1); });
+            actionsDictionary.Add('»', () => { result = EMath.ByteRateValueAction(firstNumber, currentByteRate, (a) => a >> 1); });
         }
 
         private void InitializeDigitButtonsArray()
@@ -65,7 +69,7 @@ namespace Calculator
         private void OnActionClick(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            var key = button.Text.First();
+            var key = button.Text.ToLower().First();
 
             if (key == 'n')
                 key = button.Text == not.Text ? 'n' : button.Text == nor.Text ? 'p' : 'l';
@@ -138,9 +142,17 @@ namespace Calculator
 
                 for (byte i = 0; i < number; i++)
                     digitButtons[i].Enabled = true;
+
+                SwitchBitRate((ByteRateType)number);
             }
         }
         #endregion
+
+        private void SwitchBitRate(ByteRateType byteRateType)
+        {
+            ResetData();
+            currentByteRate = byteRateType;
+        }
 
         private void Debug()
         {
@@ -176,7 +188,7 @@ namespace Calculator
 
             if (currentNumberString.StartsWith('0') && usedDot == false)
             {
-                if (number == '0')
+                if (currentByteRate != ByteRateType.Binary && number == '0')
                     return;
 
                 currentNumberString = string.Empty;
@@ -192,10 +204,7 @@ namespace Calculator
             if (text.Length == 0)
                 throw new Exception("Invalid text input");
 
-            if (text.Length == 1)
-                output.Text += text;
-            else
-                output.Text = $"{text}({output.Text})";
+            output.Text += text;
         }
 
         private void PutInputNumber(string value)
@@ -204,25 +213,33 @@ namespace Calculator
             usedDot = false;
 
             Debug();
-            float number = new float();
-            if (float.TryParse(value, out number) == false)
-                return;
 
-            if (firstNumber == DefaultValue)
-                firstNumber = number;
-            else if (secondNumber == DefaultValue)
-                secondNumber = number;
+            if (IsValidNumber(value))
+            {
+                if (firstNumber == DefaultValue)
+                    firstNumber = value;
+                else if (secondNumber == DefaultValue)
+                    secondNumber = value;
+            }
+        }
+
+        private bool IsValidNumber(string value)
+        {
+            return string.IsNullOrWhiteSpace(value) == false;
         }
 
         private void ApplyResult()
         {
             PutInputNumber(currentNumberString);
             if (secondNumber == DefaultValue)
-                secondNumber = 0;
+                secondNumber = "0";
 
             action?.Invoke();
             action = null;
-            output.Text = result.ToString();
+            output.Text = result;
+
+            if (result == null)
+                return;
 
             firstNumber = result;
             secondNumber = DefaultValue;

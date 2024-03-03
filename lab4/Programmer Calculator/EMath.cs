@@ -5,7 +5,7 @@ namespace ExtendedMath
     public static class EMath
     {
         //Виконав: Ткаченко Владислав, група ПЗ-2204
-        //Дата 01.03.2024, email:vladtk.fm@gmail.com
+        //Дата 03.03.2024, email:vladtk.fm@gmail.com
 
         public static float Factorial(float value)
         {
@@ -31,39 +31,82 @@ namespace ExtendedMath
             return value * MathF.PI / 180;
         }
 
-        public static int ConvertToBinary(string value, ByteRateType type)
+        public static string ConvertToBinary(string value, ByteRateType type)
         {
-            return 0;
+            try
+            {
+                return Convert.ToString(Convert.ToInt32(value, 2), (int)type);
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show($"There wan an error while formatting value into binary format: (value = {value})\n" + exception.Message);
+                return "Error";
+            }
         }
 
-        public static float And(float first, float second)
+        public static string ByteRateValuesAction(string first, string second, ByteRateType byteRateType, Func<int, int, int> action)
         {
-            return 0;
+            int result = action(Convert.ToInt32(first, (int)byteRateType), Convert.ToInt32(second, (int)byteRateType));
+            return Convert.ToString(result, (int)byteRateType);
         }
 
-        public static float Or(float first, float second)
+        public static string ByteRateValueAction(string value, ByteRateType byteRateType, Func<int, int> action)
         {
-            return 0;
+            int result = action(Convert.ToInt32(value, (int)byteRateType));
+            return Convert.ToString(result, (int)byteRateType);
+        }
+        /*
+        public static string And(string first, string second, ByteRateType byteRateType)
+        {
+            string binaryFirst = ConvertToBinary(first, byteRateType);
+            string binarySecond = ConvertToBinary(second, byteRateType);
+
+            int result = Convert.ToInt32(binaryFirst, 2) & Convert.ToInt32(binarySecond, 2);
+            return Convert.ToSingle(result).ToString();
         }
 
-        public static float Not(float first, float second)
+        public static string Or(string first, string second, ByteRateType byteRateType)
         {
-            return 0;
+            string binaryFirst = ConvertToBinary(first, byteRateType);
+            string binarySecond = ConvertToBinary(second, byteRateType);
+
+            int result = Convert.ToInt32(binaryFirst, 2) | Convert.ToInt32(binarySecond, 2);
+            return Convert.ToSingle(result).ToString();
         }
 
-        public static float Xor(float first, float second)
+        public static string Not(string first, ByteRateType byteRateType)
         {
-            return 0;
+            string binaryFirst = ConvertToBinary(first, byteRateType);
+
+            int result = ~Convert.ToInt32(binaryFirst, 2);
+            return Convert.ToSingle(result).ToString();
         }
 
-        public static float Nor(float first, float second)
+        public static string Xor(string first, string second, ByteRateType byteRateType)
         {
-            return 0;
+            string binaryFirst = ConvertToBinary(first, byteRateType);
+            string binarySecond = ConvertToBinary(second, byteRateType);
+
+            int result = Convert.ToInt32(binaryFirst, 2) ^ Convert.ToInt32(binarySecond, 2);
+            return Convert.ToSingle(result).ToString();
         }
 
-        public static float Nand(float first, float second)
+        public static string Nor(string first, string second, ByteRateType byteRateType)
         {
-            return 0;
+            string binaryFirst = ConvertToBinary(first, byteRateType);
+            string binarySecond = ConvertToBinary(second, byteRateType);
+
+            int result = ~(Convert.ToInt32(binaryFirst, 2) | Convert.ToInt32(binarySecond, 2));
+            return Convert.ToSingle(result).ToString();
         }
+
+        public static string Nand(string first, string second, ByteRateType byteRateType)
+        {
+            string binaryFirst = ConvertToBinary(first, byteRateType);
+            string binarySecond = ConvertToBinary(second, byteRateType);
+
+            int result = ~(Convert.ToInt32(binaryFirst, 2) & Convert.ToInt32(binarySecond, 2));
+            return Convert.ToSingle(result).ToString();
+        }*/
     }
 }
