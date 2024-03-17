@@ -31,6 +31,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProgrammerCalculator));
             seven = new Button();
             eight = new Button();
@@ -72,6 +73,7 @@
             xor = new Button();
             or = new Button();
             and = new Button();
+            toolTip = new ToolTip(components);
             SuspendLayout();
             // 
             // seven
@@ -525,5 +527,6 @@
         private Button xor;
         private Button or;
         private Button and;
+        private ToolTip toolTip;
     }
 }

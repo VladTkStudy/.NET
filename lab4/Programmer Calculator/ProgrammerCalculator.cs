@@ -13,6 +13,7 @@ namespace ProgrammerCalculator
 
         private Action? action;
         private string currentNumberString = string.Empty;
+        private OptionsData data = new OptionsData();
 
         private string firstNumber = DefaultValue;
         private string secondNumber = DefaultValue;
@@ -27,6 +28,71 @@ namespace ProgrammerCalculator
             InitializeComponent();
             InitializeDictionary();
             InitializeDigitButtonsArray();
+            ApplyLoadedData();
+            InitializeHints();
+        }
+
+        private void ApplyLoadedData()
+        {
+            BackColor = OptionsApplier.themeBackgroundColors[data.ColorThemeName == "dark" ? 0 : 1];
+            foreach (var button in digitButtons)
+                ApplyButtonDesign(button);
+            ApplyButtonDesign(percent);
+            ApplyButtonDesign(power);
+            ApplyButtonDesign(power);
+            ApplyButtonDesign(sqrt);
+            ApplyButtonDesign(minus);
+            ApplyButtonDesign(plus);
+            ApplyButtonDesign(divide);
+            ApplyButtonDesign(multiply);
+            ApplyButtonDesign(and);
+            ApplyButtonDesign(or);
+            ApplyButtonDesign(xor);
+            ApplyButtonDesign(nand);
+            ApplyButtonDesign(not);
+            ApplyButtonDesign(nor);
+            ApplyButtonDesign(dot);
+            output.Font = new Font(data.GetFont().Name, 35);
+            equals.Font = data.GetFont();
+            remove.Font = data.GetFont();
+            clear.Font = data.GetFont();
+        }
+
+        private void InitializeHints()
+        {
+            if (data.ShowHints == false)
+                return;
+
+            toolTip.SetToolTip(plus, "Input: A+B");
+            toolTip.SetToolTip(minus, "Input: A-B");
+            toolTip.SetToolTip(divide, "Input: A:B");
+            toolTip.SetToolTip(multiply, "Input: AxB");
+            toolTip.SetToolTip(sqrt, "Input: A√B, equivalent to B^1/A");
+            toolTip.SetToolTip(percent, "Input: A%B, equivalent to A/100*B");
+            toolTip.SetToolTip(power, "Input: A^B");
+            toolTip.SetToolTip(clear, "Clears all the output panel");
+            toolTip.SetToolTip(remove, "Removes the last sign from output panel");
+            toolTip.SetToolTip(equals, "Shows the result of operation");
+            toolTip.SetToolTip(left, "Left bit shift\nInput: A«");
+            toolTip.SetToolTip(right, "Right bit shift\nInput: A»");
+            toolTip.SetToolTip(not, "Input: NOT(A)");
+            toolTip.SetToolTip(and, "Input: A AND B");
+            toolTip.SetToolTip(or, "Input: A OR B");
+            toolTip.SetToolTip(xor, "Input: A XOR B");
+            toolTip.SetToolTip(nand, "Input: A NAND B");
+            toolTip.SetToolTip(nor, "Input: A NOR B");
+            toolTip.SetToolTip(bin, "Sets the byte rate to binary");
+            toolTip.SetToolTip(hex, "Sets the byte rate to hexadecimal");
+            toolTip.SetToolTip(dec, "Sets the byte rate to decimal");
+            toolTip.SetToolTip(oct, "Sets the byte rate to octal");
+        }
+
+        private void ApplyButtonDesign(Button button)
+        {
+            var themeId = data.ColorThemeName == "dark" ? 0 : 1;
+            button.ForeColor = OptionsApplier.themeFontColors[themeId];
+            button.BackColor = OptionsApplier.themeBackgroundColors[themeId];
+            button.Font = data.GetFont();
         }
 
         private void InitializeDictionary()

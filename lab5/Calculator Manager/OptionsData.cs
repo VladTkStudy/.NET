@@ -10,6 +10,9 @@
             "huge"
         };
 
+        public Dictionary<string, Font> fontsDictionary = new Dictionary<string, Font>();
+        public Dictionary<string, byte> fontSizesDictionary = new Dictionary<string, byte>();
+
         #region properties
         public string ColorThemeName => colorThemeName == null ? "null" : colorThemeName;
         public void SetColorTheme(ColorTheme colorTheme)
@@ -31,13 +34,20 @@
         public void SetFontName(FontName font)
         {
             fontName = Enum.GetName(typeof(FontName), font)?.ToLower();
+            fontsDictionary.Clear();
+            InitializeFontsDictionary();
             OnOptionsChanged?.Invoke();
         }
         public byte FontSize => fontSize;
         public void SetFontSize(string size)
         {
             if (fontSizesDictionary.ContainsKey(size))
+            {
                 fontSize = fontSizesDictionary[size];
+                fontsDictionary.Clear();
+                InitializeFontsDictionary();
+                OnOptionsChanged?.Invoke();
+            }
         }
         public bool ShowHints
         {
@@ -64,9 +74,6 @@
         private byte fontSize;
         private bool showHints;
         private bool closeOnStart;
-
-        private Dictionary<string, Font> fontsDictionary = new Dictionary<string, Font>();
-        private Dictionary<string, byte> fontSizesDictionary = new Dictionary<string, byte>();
 
         public Action? OnOptionsChanged { get; set; }
 
@@ -122,12 +129,12 @@
                 throw new Exception($"Incorrect data items length: {data.Length}");
 
             foreach (string name in Enum.GetNames(typeof(ColorTheme)))
-                if (data[0] == name)
-                    colorThemeName = name;
+                if (data[0] == name.ToLower())
+                    colorThemeName = name.ToLower();
 
             foreach (string font in Enum.GetNames(typeof(FontName)))
-                if (data[1] == font)
-                    fontName = font;
+                if (data[1] == font.ToLower())
+                    fontName = font.ToLower();
 
             byte.TryParse(data[2], out fontSize);
             bool.TryParse(data[3], out showHints);

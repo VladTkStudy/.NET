@@ -213,10 +213,10 @@
             // 
             // output
             // 
-            output.BackColor = SystemColors.ActiveCaptionText;
+            output.BackColor = SystemColors.ActiveBorder;
             output.BorderStyle = BorderStyle.None;
             resources.ApplyResources(output, "output");
-            output.ForeColor = Color.White;
+            output.ForeColor = Color.Black;
             output.Name = "output";
             // 
             // Equals

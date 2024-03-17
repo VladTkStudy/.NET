@@ -4,8 +4,6 @@ C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\bin\Debug\net8.
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\bin\Debug\net8.0-windows\EngineerCalculator.dll
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\bin\Debug\net8.0-windows\EngineerCalculator.pdb
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\bin\Debug\net8.0-windows\aa\EngineerCalculator.resources.dll
-C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\Calculator.EngineerCalculator.resources
-C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\Calculator.EngineerCalculator.aa.resources
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\EngineerCalculator.csproj.GenerateResource.cache
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\EngineerCalculator.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\EngineerCalculator.AssemblyInfoInputs.cache
@@ -18,3 +16,5 @@ C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\EngineerCalculator.pdb
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\EngineerCalculator.genruntimeconfig.cache
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\ref\EngineerCalculator.dll
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\EngineerCalculator.EngineerCalculator.resources
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab3\Engineer Calculator\obj\Debug\net8.0-windows\EngineerCalculator.EngineerCalculator.aa.resources

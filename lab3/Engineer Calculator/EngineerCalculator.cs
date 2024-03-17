@@ -13,6 +13,7 @@ namespace EngineerCalculator
 
         private Action? action;
         private string currentNumberString = string.Empty;
+        private OptionsData data = new OptionsData();
 
         private float firstNumber = DefaultValue;
         private float secondNumber = DefaultValue;
@@ -23,6 +24,53 @@ namespace EngineerCalculator
         {
             InitializeComponent();
             InitializeDictionary();
+            ApplyLoadedData();
+        }
+
+        private void ApplyLoadedData()
+        {
+            BackColor = OptionsApplier.themeBackgroundColors[data.ColorThemeName == "dark" ? 0 : 1];
+            ApplyButtonDesign(one);
+            ApplyButtonDesign(two);
+            ApplyButtonDesign(three);
+            ApplyButtonDesign(four);
+            ApplyButtonDesign(five);
+            ApplyButtonDesign(six);
+            ApplyButtonDesign(seven);
+            ApplyButtonDesign(eight);
+            ApplyButtonDesign(nine);
+            ApplyButtonDesign(percent);
+            ApplyButtonDesign(divide);
+            ApplyButtonDesign(plus);
+            ApplyButtonDesign(minus);
+            ApplyButtonDesign(sqrt);
+            ApplyButtonDesign(multiply);
+            ApplyButtonDesign(power);
+            ApplyButtonDesign(zero);
+            ApplyButtonDesign(factorial);
+            ApplyButtonDesign(logarifm);
+            ApplyButtonDesign(nlogarifn);
+            ApplyButtonDesign(mod);
+            ApplyButtonDesign(radian);
+            ApplyButtonDesign(exponent);
+            ApplyButtonDesign(pi);
+            ApplyButtonDesign(sin);
+            ApplyButtonDesign(cos);
+            ApplyButtonDesign(tan);
+            ApplyButtonDesign(cotan);
+            ApplyButtonDesign(dot);
+            output.Font = new Font(data.GetFont().Name, 35);
+            Equals.Font = data.GetFont();
+            remove.Font = data.GetFont();
+            clear.Font = data.GetFont();
+        }
+
+        private void ApplyButtonDesign(Button button)
+        {
+            var themeId = data.ColorThemeName == "dark" ? 0 : 1;
+            button.ForeColor = OptionsApplier.themeFontColors[themeId];
+            button.BackColor = OptionsApplier.themeBackgroundColors[themeId];
+            button.Font = data.GetFont();
         }
 
         private void InitializeDictionary()

@@ -1,9 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\lab2",
+    "\\lab2\\Calculator",
+    "\\lab3",
+    "\\lab3\\Engineer Calculator",
+    "\\lab4",
+    "\\lab4\\Programmer Calculator",
     "\\lab5",
     "\\lab5\\Calculator Manager"
   ],
-  "SelectedNode": "\\lab5\\Calculator Manager\\ProgrammerCalculator.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -21,6 +21,10 @@ namespace ProgrammerCalculator
         public CalculatorManager()
         {
             InitializeComponent();
+            optionsManager.OnApplied += ApplySettings;
+            ApplySettings();
+            toolTip.SetToolTip(start, "Starts selected calculator");
+            toolTip.SetToolTip(options, "Opens additional form for visual configuration");
         }
 
         private void StartCalculator(CalculatorType type)
@@ -67,10 +71,8 @@ namespace ProgrammerCalculator
         private void OptionsClick(object sender, EventArgs e)
         {
             if(optionsManager == null || optionsManager.IsDisposed)
-            {
                 optionsManager = new OptionsManager();
-                optionsManager.OnApplied += ApplySettings;
-            }
+
             optionsManager.Show();
         }
 
@@ -82,6 +84,20 @@ namespace ProgrammerCalculator
         private void ApplySettings()
         {
             optionsManager.Data.SaveData();
+
+            var themeId = optionsManager.Data.ColorThemeName == "dark" ? 0 : 1;
+            BackColor = OptionsApplier.themeBackgroundColors[themeId];
+            options.BackColor = OptionsApplier.themeButtonsColors[themeId];
+            options.ForeColor = OptionsApplier.themeFontColors[themeId];
+            options.Font = optionsManager.Data.GetFont();
+            start.Font = optionsManager.Data.GetFont();
+            radioButton1.ForeColor = OptionsApplier.themeFontColors[themeId];
+            radioButton1.Font = optionsManager.Data.GetFont();
+            radioButton2.ForeColor = OptionsApplier.themeFontColors[themeId];
+            radioButton2.Font = optionsManager.Data.GetFont();
+            radioButton3.ForeColor = OptionsApplier.themeFontColors[themeId];
+            radioButton3.Font = optionsManager.Data.GetFont();
+            toolTip.Active = optionsManager.Data.ShowHints;
         }
     }
 }
