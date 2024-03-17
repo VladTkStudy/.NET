@@ -1,4 +1,4 @@
-﻿namespace Calculator
+﻿namespace EngineerCalculator
 {
     partial class EngineerCalculator
     {

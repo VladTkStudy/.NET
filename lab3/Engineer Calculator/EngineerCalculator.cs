@@ -1,6 +1,6 @@
 ﻿using ExtendedMath;
 
-namespace Calculator
+namespace EngineerCalculator
 {
     public partial class EngineerCalculator : Form
     {

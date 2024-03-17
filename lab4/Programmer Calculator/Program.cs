@@ -1,4 +1,4 @@
-﻿namespace Calculator
+﻿namespace ProgrammerCalculator
 {
     internal static class Program
     {

@@ -4,8 +4,6 @@ C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\bin\Debug\net
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\bin\Debug\net8.0-windows\ProgrammerCalculator.dll
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\bin\Debug\net8.0-windows\ProgrammerCalculator.pdb
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\bin\Debug\net8.0-windows\aa\ProgrammerCalculator.resources.dll
-C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\obj\Debug\net8.0-windows\Calculator.ProgrammerCalculator.resources
-C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\obj\Debug\net8.0-windows\Calculator.ProgrammerCalculator.aa.resources
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\obj\Debug\net8.0-windows\ProgrammerCalculator.csproj.GenerateResource.cache
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\obj\Debug\net8.0-windows\ProgrammerCalculator.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\obj\Debug\net8.0-windows\ProgrammerCalculator.AssemblyInfoInputs.cache
@@ -18,3 +16,5 @@ C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\obj\Debug\net
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\obj\Debug\net8.0-windows\ProgrammerCalculator.pdb
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\obj\Debug\net8.0-windows\ProgrammerCalculator.genruntimeconfig.cache
 C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\obj\Debug\net8.0-windows\ref\ProgrammerCalculator.dll
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\obj\Debug\net8.0-windows\ProgrammerCalculator.ProgrammerCalculator.resources
+C:\Users\nagib\Documents\VSCode\C#\.NET\lab4\Programmer Calculator\obj\Debug\net8.0-windows\ProgrammerCalculator.ProgrammerCalculator.aa.resources

@@ -55,58 +55,5 @@ namespace ExtendedMath
             int result = action(Convert.ToInt32(value, (int)byteRateType));
             return Convert.ToString(result, (int)byteRateType);
         }
-        /*
-        public static string And(string first, string second, ByteRateType byteRateType)
-        {
-            string binaryFirst = ConvertToBinary(first, byteRateType);
-            string binarySecond = ConvertToBinary(second, byteRateType);
-
-            int result = Convert.ToInt32(binaryFirst, 2) & Convert.ToInt32(binarySecond, 2);
-            return Convert.ToSingle(result).ToString();
-        }
-
-        public static string Or(string first, string second, ByteRateType byteRateType)
-        {
-            string binaryFirst = ConvertToBinary(first, byteRateType);
-            string binarySecond = ConvertToBinary(second, byteRateType);
-
-            int result = Convert.ToInt32(binaryFirst, 2) | Convert.ToInt32(binarySecond, 2);
-            return Convert.ToSingle(result).ToString();
-        }
-
-        public static string Not(string first, ByteRateType byteRateType)
-        {
-            string binaryFirst = ConvertToBinary(first, byteRateType);
-
-            int result = ~Convert.ToInt32(binaryFirst, 2);
-            return Convert.ToSingle(result).ToString();
-        }
-
-        public static string Xor(string first, string second, ByteRateType byteRateType)
-        {
-            string binaryFirst = ConvertToBinary(first, byteRateType);
-            string binarySecond = ConvertToBinary(second, byteRateType);
-
-            int result = Convert.ToInt32(binaryFirst, 2) ^ Convert.ToInt32(binarySecond, 2);
-            return Convert.ToSingle(result).ToString();
-        }
-
-        public static string Nor(string first, string second, ByteRateType byteRateType)
-        {
-            string binaryFirst = ConvertToBinary(first, byteRateType);
-            string binarySecond = ConvertToBinary(second, byteRateType);
-
-            int result = ~(Convert.ToInt32(binaryFirst, 2) | Convert.ToInt32(binarySecond, 2));
-            return Convert.ToSingle(result).ToString();
-        }
-
-        public static string Nand(string first, string second, ByteRateType byteRateType)
-        {
-            string binaryFirst = ConvertToBinary(first, byteRateType);
-            string binarySecond = ConvertToBinary(second, byteRateType);
-
-            int result = ~(Convert.ToInt32(binaryFirst, 2) & Convert.ToInt32(binarySecond, 2));
-            return Convert.ToSingle(result).ToString();
-        }*/
     }
 }

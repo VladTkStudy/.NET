@@ -1,7 +1,6 @@
 ﻿using ExtendedMath;
-using ProgrammerCalculator;
 
-namespace Calculator
+namespace ProgrammerCalculator
 {
     public partial class ProgrammerCalculator : Form
     {
@@ -146,6 +145,11 @@ namespace Calculator
                 SwitchBitRate((ByteRateType)number);
             }
         }
+
+        private void OnEnterClick(object sender, EventArgs e)
+        {
+            Enter();
+        }
         #endregion
 
         private void SwitchBitRate(ByteRateType byteRateType)
@@ -243,6 +247,20 @@ namespace Calculator
 
             firstNumber = result;
             secondNumber = DefaultValue;
+        }
+
+        private void Enter()
+        {
+            for (byte i = 0; i < output.Text.Length; i++)
+            {
+                if (actionsDictionary.ContainsKey(output.Text[i]))
+                {
+                    firstNumber = output.Text.Remove(i - 1);
+                    secondNumber = output.Text.Remove(i + 1);
+                    action = actionsDictionary[output.Text[i]];
+                    break;
+                }
+            }
         }
     }
 }
